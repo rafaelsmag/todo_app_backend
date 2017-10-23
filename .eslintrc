@@ -1,0 +1,28 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [
+          "_id",
+          "_doc"
+        ]
+      }
+    ]
+  },
+  "plugins": [],
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "globals": {
+    "request": true,
+    "expect": true,
+    "userModel": true
+  },
+  "extends": "airbnb"
+}
